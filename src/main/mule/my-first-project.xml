@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="my-first-projectFlow" doc:id="572bf9af-938e-408c-82c7-fb9d33f64c5d" >
-		<http:listener doc:name="Listener" doc:id="270b08cf-a105-48b8-8fff-ad4734cfe31b" config-ref="HTTP_Listener_config" path="/test-myfirstproject"/>
+		<http:listener doc:name="Listener" doc:id="270b08cf-a105-48b8-8fff-ad4734cfe31b" config-ref="HTTP_Listener_config" path="/myfirstproject"/>
 		<logger level="INFO" doc:name="Logger" doc:id="1c10cf6e-3186-4e81-ad38-b50f91c81683" message="my-first-projectFlow started.."/>
 		<ee:transform doc:name="Transform Message" doc:id="db7e6085-ba82-4a64-8de0-4a53ef392d72" >
 			<ee:message >
@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"message": "welcome to my mule first git project"
+	"message": " welcome to my mule first git project "
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
